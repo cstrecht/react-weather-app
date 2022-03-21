@@ -1,13 +1,96 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "montseratt", sans-serif;
+  overflow: hidden;
+}
+.app {
+  background-image: url(https://wallpaperaccess.com/full/159984.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 2s ease-out;
+}
+.app.warm {
+  background-image: url(https://i.pinimg.com/originals/05/0f/aa/050faa7eb7e1c9b1d6c8d1e69648302c.jpg);
+}
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+.search-box {
+  width: 50%;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 50%;
+  padding: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 20px;
+  transition: 0.4 ease;
+}
+.search-box .search-bar:focus {
+  background-color: rgba (255, 255, 255, 1);
+}
+.location-box {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+.min-max {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background: rgba(250, 249, 249, 0.308);
+  color: white;
+  border-radius: 20px;
+}
+.box-info {
+  color: white;
+  align-items: center;
+}
+.box-title {
+  color: rgba(184, 184, 184, 0.575);
 }
